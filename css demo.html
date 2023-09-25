@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CHA LOVES MCDONALD'S </title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        form {
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        label {
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="range"],
+        input[type="email"] {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: red;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">I'M LOVING IT</h2>
+
+<form action="submit.php" method="POST">
+    
+    <label for="age">What is your age?:</label>
+    <input type="number" id="age" name="age" min="1" max="100" required><br>
+    
+    <label>Do you frequent Mcdonalds?:</label><br>
+    <input type="radio" id="yes" name="yes" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="no" value="no">
+    <label for="yes">No</label><br>
+
+    <label>What do you normally order from us?:</label><br>
+    <input list="food items">
+    <datalist id="food items">
+        <option value="Meals" />
+        <option value="Sides" />
+        <option value="Desserts" />
+        <option value="Drinks" />
+    </datalist>
+    
+    <label>Which boy do you like?:</label><br>
+    <input type="checkbox" id="marc" name="marc" value="marc" required>
+    <label for="marc">Marc</label>
+    <input type="checkbox" id="zhiyang" name="gender" value="zhiyang" required>
+    <label for="zhiyang">Zhiyang</label>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
